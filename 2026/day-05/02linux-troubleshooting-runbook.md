@@ -5,7 +5,7 @@ ssh
 
 ---
 
-## 🧾 Environment Basics
+##  Environment Basics
 
 ### Command:
 uname -a  
@@ -19,7 +19,7 @@ Confirms OS distribution and version.
 
 ---
 
-## 📁 Filesystem Sanity
+##  Filesystem Sanity
 
 ### Command:
 mkdir /tmp/runbook-demo
@@ -31,7 +31,7 @@ Filesystem is writable and files are accessible.
 
 ---
 
-## 🧠 Snapshot: CPU & Memory
+##  Snapshot: CPU & Memory
 
 ### Command:
 top
@@ -45,7 +45,7 @@ Sufficient free memory available, no swap pressure.
 
 ---
 
-## 💾 Snapshot: Disk & IO
+##  Snapshot: Disk & IO
 
 ### Command:
 df -h
@@ -59,7 +59,7 @@ Logs directory size is reasonable.
 
 ---
 
-## 🌐 Snapshot: Network
+##  Snapshot: Network
 
 ### Command:
 ss -tulpn | grep ssh
@@ -73,7 +73,7 @@ Local network stack responding correctly.
 
 ---
 
-## 📜 Logs Reviewed
+##  Logs Reviewed
 
 ### Command:
 journalctl -u ssh -n 50
