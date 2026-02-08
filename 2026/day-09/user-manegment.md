@@ -38,7 +38,8 @@
   assign usr to grp
   <img width="1895" height="313" alt="assign to grp" src="https://github.com/user-attachments/assets/62f3499f-f14c-47e5-a2a3-297f3de474ab" />
   create directory ,set grp & permission & verify
-  <img width="1902" height="276" alt="create grp nd verify" src="https://github.com/user-attachments/assets/931f2508-08f6-49f3-b543-dd3d0d7178f9" />
+   <img width="1882" height="251" alt="c," src="https://github.com/user-attachments/assets/9accb4d9-c714-45fb-9cd5-cb11716182a0" />
+
   <img width="1882" height="251" alt="part2" src="https://github.com/user-attachments/assets/a23ef2eb-e362-4a48-a652-05e773d2146c" />
 
   
