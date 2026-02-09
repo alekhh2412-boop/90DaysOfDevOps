@@ -72,5 +72,8 @@ Verify: ls -l bank-heist/
 <img width="1890" height="637" alt="task last" src="https://github.com/user-attachments/assets/92c58c7f-2c4c-43ad-a197-8ad721b7ed93" />
 
 ## What I Learned
+- Difference between file owner and group
+- How to change ownership using chown & chgrp
+- Why recursive ownership is critical in DevOps
 [this task was callenging for me bcause at begginer level multiple user creation listing properly and creting groups thats litile bit tough but it was all good for me and i enjoued it...
 happy learning]
