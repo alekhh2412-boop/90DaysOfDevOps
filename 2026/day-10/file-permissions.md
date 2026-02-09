@@ -3,7 +3,7 @@
 Create empty file devops.txt using touch
 Create notes.txt with some content using cat or echo
 Create script.sh using vim with content: echo "Hello DevOps"
-Verify: ls -l to see permissions
+Verify: ls -l to see permissions 
 <img width="1915" height="407" alt="permissions" src="https://github.com/user-attachments/assets/abb5b966-7bb8-483f-9e68-ef9b73b1ec37" />
 
 Read notes.txt using cat
@@ -30,17 +30,17 @@ how i did fix
 Try executing a file without execute permission
 <img width="1892" height="42" alt="execute permission denied" src="https://github.com/user-attachments/assets/0af3ae4d-07c3-4d95-a056-1e4149164446" />
 how i fix
-
-
-Document the error messages
-## Files Created
-[list files]
-
-## Permission Changes
-[before/after for each file]
+sudo cmod 777 devops.txt
 
 ## Commands Used
-[your commands]
+touch 
+cat
+ls -l
+./
+chmod
+echo mkdir 
+
 
 ## What I Learned
-[3 key points]
+[create fiels and remove permission 
+how to give permissions to etc]
