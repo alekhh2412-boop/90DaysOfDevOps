@@ -24,7 +24,7 @@ text
 - An IPv4 (Internet Protocol version 4) address is a 32-bit unique identifier assigned to a device on a network so it can send and receive data. IPv4 address is divided into 4 parts, called octets each octet=4bits tottal=32
 2. Difference between **public** and **private** IPs — give one example of each
 - Public IPs are internet-facing, while private IPs are used for internal communication within a network.
-- | Public IP                    | Private IP                         |
+| Public IP                    | Private IP                         |
 | ---------------------------- | ---------------------------------- |
 | Accessible over the internet | Used inside a private network      |
 | Assigned by ISP              | Assigned by router / local network |
