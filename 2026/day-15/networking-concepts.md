@@ -1,6 +1,5 @@
 ### Networking Concepts : DNS,IP,Subnet & Ports
-
-## Task 1: DNS – How Names Become IPs
+# Task 1: DNS – How Names Become IPs
 1. when we type on search bar of browser (google.com) then the browser first initiates a DNS lookup to translate the domain name into a machine-readable IP address. It then establishes a secure, reliable TCP connection (often with TLS/SSL for HTTPS) to that IP. Once connected, the browser sends an HTTP request to the server, which processes it and sends back the HTML, CSS, and JavaScript files to render the webpage. 
 2. What are these record types? Write one line each:
    - `A`, `AAAA`, `CNAME`, `MX`, `NS`
