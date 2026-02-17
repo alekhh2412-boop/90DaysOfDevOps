@@ -90,6 +90,8 @@ tcp 0 0 172.31.6.84:59020 3.27.177.158:443 ESTABLISHED
 tcp6 0 0 :::22 :::* LISTEN
 Observation:
 System has active LISTEN and ESTABLISHED connections, confirming network activity.
+bin/!
+
 
 🔍 Mini Task: Port Probe & Interpretation
 Identified listening port: 22 (SSH)
