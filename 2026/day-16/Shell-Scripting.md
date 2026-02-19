@@ -16,7 +16,7 @@ chmod +x hello.sh
 <img width="602" height="225" alt="first script" src="https://github.com/user-attachments/assets/8f4eca11-f403-4931-9568-a425ec85acba" />
 
 **Document:** What happens if you remove the shebang line?
-
+-The shebang is not needed because you already told the system which shell to use
 ---
 
 ### Task 2: Variables
@@ -63,9 +63,9 @@ Create `server_check.sh` that:
 
 ## Documentation
 - What you learned (3 key points)
-- script can redused time and improve work efficiency
-- How DevOps Engineers can script repitative portion
-- Automate things with scriping
+ script can redused time and improve work efficiency
+ How DevOps Engineers can script repitative portion
+ Automate things with scriping
 
 
 ---
