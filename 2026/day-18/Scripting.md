@@ -6,9 +6,11 @@
 1. Create `functions.sh` with:
    - A function `greet` that takes a name as argument and prints `Hello, <name>!`
 <img width="710" height="147" alt="1-1 basic futn" src="https://github.com/user-attachments/assets/c460fd5c-beb5-4a04-af49-d081cf37797e" />
-<img width="573" height="302" alt="1-1 basic futn s" src="https://github.com/user-attachments/assets/73bb3fe6-ef88-4894-adcb-01353f68d00c" />- A function `add` that takes two numbers and prints their sum
+<img width="573" height="302" alt="1-1 basic futn s" src="https://github.com/user-attachments/assets/73bb3fe6-ef88-4894-adcb-01353f68d00c" />
+- A function `add` that takes two numbers and prints their sum
 <img width="893" height="243" alt="1-2 futn with return value" src="https://github.com/user-attachments/assets/6d2d957e-6ed0-496e-ac7b-ef850bfb947a" />
-<img width="560" height="366" alt="1-2 futn with return value s" src="https://github.com/user-attachments/assets/2bdbd82a-60c2-425e-bbee-9f1cfd4158fc" />  - Call both functions from the script
+<img width="560" height="366" alt="1-2 futn with return value s" src="https://github.com/user-attachments/assets/2bdbd82a-60c2-425e-bbee-9f1cfd4158fc" />
+- Call both functions from the script
                                                     
 
 ---
