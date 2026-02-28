@@ -312,68 +312,91 @@ awk -F, '{print $1, $3}' users.csv
 Document with examples:
 1. Exit codes — `$?`, `exit 0`, `exit 1`
    Every Linux command returns an exit code.
-0 → success
-Non-zero → failure
+0 → Command executed successfully
+Non-zero → Command failed
 Check exit code of last command
 ls /etc
 echo $?
-Example: success and failure
-#!/bin/bash
+Example: Failed command
 ls /wrong/path
-echo $?
+echo $?   # non-zero value
 Manually exit from script
 exit 0   # success
 exit 1   # failure
-📌 $? always stores the exit code of the last executed command
+📌 $? always stores the exit code of the last command .
 3. `set -e` — exit on error
-   Stops the script immediately if any command fails.
+   set -e — Exit on Error
+
+Stops the script immediately if any command fails.
+
 #!/bin/bash
 set -e
-echo "Start"
+
+echo "Script started"
 ls /wrong/path
-echo "This line will NOT run"
+echo "This will not run"
+
 📌 Useful in automation and CI/CD
-📌 Prevents scripts from continuing in a broken state
+📌 Prevents partial or broken execution
 5. `set -u` — treat unset variables as error
-   Treats undefined variables as errors.
+    If a variable is not defined, the script will exit.
+
 #!/bin/bash
 set -u
-echo $USERNAME
-❌ If USERNAME is not defined → script exits with error
-📌 Helps catch typos and missing variables
-7. `set -o pipefail` — catch errors in pipes
-   By default, pipelines return the exit code of the last command only.
-Without pipefail (bad)
+
+echo $USERNAME   # error if USERNAME not set
+
+📌 Helps catch typos and missing variables early
+6. `set -o pipefail  — catch errors in pipes
+    set -o pipefail — Catch Errors in Pipelines
+
+By default, pipelines return the exit code of the last command only.
+
+Without pipefail
 false | true
-echo $?   # returns 0 (wrong)
-With pipefail (good)
+echo $?    returns 0 (wrong)
+With pipefail
 set -o pipefail
 false | true
-echo $?   # returns non-zero
+echo $?    returns non-zero (correct)
+
 📌 Very important when using grep, awk, sed in pipelines
-9. `set -x` — debug mode (trace execution)
-    Prints each command before executing it.
+7. `set -x` — debug mode (trace execution)
+    set -x — Debug Mode (Trace Execution)
+
+Shows each command before it runs.
+
 #!/bin/bash
 set -x
+
 name="DevOps"
 echo "Hello $name"
+
 Output:
+
 + name=DevOps
 + echo 'Hello DevOps'
+
 📌 Best for debugging complex scripts
-📌 Turn off using set +x
-11. Trap — `trap 'cleanup' EXIT`
-  Runs a command or function when the script exits (success or failure).
-Example: cleanup temporary file
+📌 Disable using set +x
+
+8. Trap — `trap 'cleanup' EXIT`
+   Runs a command or function when the script exits.
+
+Example: Cleanup temporary files
 #!/bin/bash
+
 cleanup() {
   echo "Cleaning up..."
-  rm -f /tmp/testfile
+  rm -f /tmp/tempfile
 }
+
 trap cleanup EXIT
-touch /tmp/testfile
+
+touch /tmp/tempfile
 echo "Script running"
-📌 Ensures cleanup even if script fails
+
+📌 Cleanup runs even if script fails
 📌 Commonly used for temp files, locks, services
 ---
 
